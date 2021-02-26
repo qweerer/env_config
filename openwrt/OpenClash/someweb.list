@@ -3,4 +3,9 @@
 
 # hentai
 DOMAIN-KEYWORD,hentai
+
+# ssr
 DOMAIN-KEYWORD,lncn.org
+
+# telegram
+DOMAIN-SUFFIX,t.me
