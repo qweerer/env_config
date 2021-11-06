@@ -75,10 +75,10 @@ secret: ''
 
 proxies:
   -
-    name: openwrt旁路由
+    name: 旁路由
     type: socks5
-    server: 192.168.2.2
-    port: 2003
+    server: 192.168.2.20
+    port: 2002
 
   -
     name: MSI
@@ -97,6 +97,16 @@ proxies:
     type: socks5
     server: 172.16.1.195
     port: 2003
+   
+  -
+    name: phone-内网穿透
+    type: ss
+    server: vbox.abc.com
+    port: 8443
+    cipher: aes-256-cfb
+    password: 1234
+    plugin: v2ray-plugin
+    plugin-opts: {mode: websocket, host: vbox.abc.com, path: /ss, tls: true, mux: false}
 
 proxy-groups:
   - name: 🚀 节点选择
