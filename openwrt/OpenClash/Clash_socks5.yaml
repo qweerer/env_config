@@ -113,13 +113,13 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - openwrt旁路由
+      - 旁路由
       - MSI
       - ovry
   - name: ⛪ 家中内网穿透
     type: select
     proxies:
-      - 🚀 phone-内网穿透
+      - phone-内网穿透
       - 🚀 节点选择
       - 🎯 全球直连
   - name: 📢 谷歌FCM
