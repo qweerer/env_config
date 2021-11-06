@@ -116,6 +116,12 @@ proxy-groups:
       - openwrt旁路由
       - MSI
       - ovry
+  - name: ⛪ 家中内网穿透
+    type: select
+    proxies:
+      - 🚀 phone-内网穿透
+      - 🚀 节点选择
+      - 🎯 全球直连
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -183,6 +189,8 @@ proxy-groups:
       - 🎯 全球直连
 
 rules:
+ - DOMAIN-SUFFIX,abc.com,⛪ 家中内网穿透
+ - IP-CIDR,192.168.2.1/24,⛪ 家中内网穿透,no-resolve
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
