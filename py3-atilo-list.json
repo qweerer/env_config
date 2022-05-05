@@ -1,5 +1,6 @@
 {
     "linux": [
+        "alpine-make",
         "alpine",
         "centos",
         "debian",
